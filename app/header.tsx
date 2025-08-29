@@ -38,9 +38,9 @@ export function Header() {
       <div className="relative ml-auto" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="p-3 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
+          className="p-4 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
         >
-          <span className="text-white font-bold text-2xl drop-shadow-md">!</span>
+          <span className="text-white font-bold text-4xl drop-shadow-md">!</span>
         </button>
         
         {/* Dropdown Menu */}
