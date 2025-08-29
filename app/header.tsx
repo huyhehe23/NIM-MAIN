@@ -35,13 +35,13 @@ export function Header() {
       </div>
       
       {/* Star Button with Dropdown */}
-      <div className="relative" ref={dropdownRef}>
+      <div className="relative ml-auto" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+          className="p-3 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
         >
           <svg
-            className="w-6 h-6 text-yellow-500 hover:text-yellow-600 transition-colors"
+            className="w-8 h-8 text-white drop-shadow-md"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
