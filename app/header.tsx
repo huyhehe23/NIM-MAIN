@@ -9,7 +9,7 @@ export function Header() {
         <img 
           src="https://www.animedep.com/wp-content/uploads/2025/04/anh-anime-nam-2.webp" 
           alt="Anime Avatar" 
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-20 h-20 rounded-full object-cover"
         />
         <div>
           <Link href="/" className="font-medium text-black dark:text-white">
