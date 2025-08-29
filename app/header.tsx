@@ -11,7 +11,7 @@ export function Header() {
   useClickOutside(dropdownRef, () => setIsDropdownOpen(false))
 
   return (
-    <header className="mb-8 flex items-center justify-between">
+    <header className="mb-8 flex items-center justify-between w-full">
       <div className="flex items-center gap-3">
         <img 
           src="https://www.animedep.com/wp-content/uploads/2025/04/anh-anime-nam-2.webp" 
@@ -34,7 +34,7 @@ export function Header() {
         </div>
       </div>
       
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 ml-auto">
         {/* New Multi-Section Button */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
           <div className="flex">
@@ -63,9 +63,9 @@ export function Header() {
         <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="p-4 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
+          className="p-6 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
         >
-          <span className="text-white font-bold text-4xl drop-shadow-md">!</span>
+          <span className="text-white font-bold text-6xl drop-shadow-lg">!</span>
         </button>
         
         {/* Dropdown Menu */}
