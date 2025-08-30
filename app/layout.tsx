@@ -43,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
         style={{
-          backgroundImage: `url('https://cdn.pixabay.com/photo/2016/11/29/06/15/badminton-1867534_1280.jpg')`,
+          backgroundImage: `url('https://cdn.pixabay.com/photo/2021/09/02/16/48/badminton-6596525_1920.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
