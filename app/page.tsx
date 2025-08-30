@@ -137,7 +137,10 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Tôi là một chuyên gia về lĩnh vực cầu lông.
+            Tôi là một chuyên gia về lĩnh vực cầu lông với nhiều năm kinh nghiệm 
+            trong việc hướng dẫn kỹ thuật, chiến thuật và phát triển tài năng. 
+            Chuyên sâu về phân tích kỹ thuật, xây dựng chương trình tập luyện và 
+            tư vấn thiết bị chuyên nghiệp.
           </p>
         </div>
       </motion.section>
