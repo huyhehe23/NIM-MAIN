@@ -133,14 +133,15 @@ export default function Personal() {
     >
       {/* Horizontal Layout Section */}
       <motion.div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
+        className="grid grid-cols-1 xl:grid-cols-3 gap-16 items-start"
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        {/* Left side - Description */}
-        <motion.section>
+        {/* Left side - Description (wider) */}
+        <motion.section className="xl:col-span-2">
           <div className="flex-1">
-            <p className="text-zinc-600 dark:text-zinc-400">
+            <h2 className="text-2xl font-bold text-black dark:text-white mb-6">Về tôi</h2>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
               Tôi là một chuyên gia về lĩnh vực cầu lông với nhiều năm kinh nghiệm 
               trong việc hướng dẫn kỹ thuật, chiến thuật và phát triển tài năng. 
               Chuyên sâu về phân tích kỹ thuật, xây dựng chương trình tập luyện và 
@@ -149,9 +150,9 @@ export default function Personal() {
           </div>
         </motion.section>
 
-        {/* Right side - Projects */}
+        {/* Right side - Projects (narrower) */}
         <motion.section>
-          <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+          <h3 className="mb-6 text-xl font-bold text-black dark:text-white">Selected Projects</h3>
           <div className="grid grid-cols-1 gap-6">
             {PROJECTS.map((project) => (
               <div key={project.name} className="space-y-2">
