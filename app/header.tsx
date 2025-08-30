@@ -46,7 +46,7 @@ export function Header() {
         {/* Large Modal Panel */}
         {isDropdownOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-3/4 flex flex-col">
+            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl h-auto min-h-[500px] flex flex-col">
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900">Menu Chính</h2>
@@ -61,45 +61,45 @@ export function Header() {
               </div>
               
               {/* Content - 3 items horizontally */}
-              <div className="flex-1 p-8 flex items-center justify-center">
-                <div className="flex gap-8 w-full max-w-4xl">
+              <div className="flex-1 p-8">
+                <div className="flex flex-col sm:flex-row gap-6 h-full">
                   {/* Option 1 */}
                   <div 
                     onClick={() => {
                       setIsDropdownOpen(false)
-                      alert('Mục 1 được chọn!')
+                      alert('Kỹ năng cầu lông được chọn!')
                     }}
-                    className="flex-1 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-8 text-white cursor-pointer hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                    className="flex-1 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 text-white cursor-pointer hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center min-h-[250px] flex flex-col justify-center"
                   >
-                    <div className="text-6xl mb-4">🎯</div>
-                    <h3 className="text-2xl font-bold mb-2">Kỹ năng</h3>
-                    <p className="text-blue-100">Các kỹ thuật và chiến thuật cầu lông chuyên nghiệp</p>
+                    <div className="text-5xl mb-4">🎯</div>
+                    <h3 className="text-xl font-bold mb-3">Kỹ năng</h3>
+                    <p className="text-blue-100 text-sm">Các kỹ thuật và chiến thuật cầu lông chuyên nghiệp</p>
                   </div>
                   
                   {/* Option 2 */}
                   <div 
                     onClick={() => {
                       setIsDropdownOpen(false)
-                      alert('Mục 2 được chọn!')
+                      alert('Huấn luyện cầu lông được chọn!')
                     }}
-                    className="flex-1 bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-8 text-white cursor-pointer hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                    className="flex-1 bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-6 text-white cursor-pointer hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center min-h-[250px] flex flex-col justify-center"
                   >
-                    <div className="text-6xl mb-4">⚡</div>
-                    <h3 className="text-2xl font-bold mb-2">Huấn luyện</h3>
-                    <p className="text-green-100">Chương trình đào tạo cầu lông từ cơ bản đến nâng cao</p>
+                    <div className="text-5xl mb-4">⚡</div>
+                    <h3 className="text-xl font-bold mb-3">Huấn luyện</h3>
+                    <p className="text-green-100 text-sm">Chương trình đào tạo cầu lông từ cơ bản đến nâng cao</p>
                   </div>
                   
                   {/* Option 3 */}
                   <div 
                     onClick={() => {
                       setIsDropdownOpen(false)
-                      alert('Mục 3 được chọn!')
+                      alert('Thi đấu cầu lông được chọn!')
                     }}
-                    className="flex-1 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-8 text-white cursor-pointer hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                    className="flex-1 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-6 text-white cursor-pointer hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-center min-h-[250px] flex flex-col justify-center"
                   >
-                    <div className="text-6xl mb-4">🚀</div>
-                    <h3 className="text-2xl font-bold mb-2">Thi đấu</h3>
-                    <p className="text-purple-100">Kinh nghiệm thi đấu và tư vấn chiến thuật</p>
+                    <div className="text-5xl mb-4">🚀</div>
+                    <h3 className="text-xl font-bold mb-3">Thi đấu</h3>
+                    <p className="text-purple-100 text-sm">Kinh nghiệm thi đấu và tư vấn chiến thuật</p>
                   </div>
                 </div>
               </div>
