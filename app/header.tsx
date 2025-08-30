@@ -43,40 +43,66 @@ export function Header() {
           <span className="text-white font-bold text-4xl drop-shadow-lg">!</span>
         </button>
         
-        {/* Dropdown Menu */}
+        {/* Large Modal Panel */}
         {isDropdownOpen && (
-          <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
-            <div className="py-1">
-              <button
-                onClick={() => {
-                  setIsDropdownOpen(false)
-                  // Add your action here
-                  alert('Mục 1 được chọn!')
-                }}
-                className="block w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                🎯 Mục 1
-              </button>
-              <button
-                onClick={() => {
-                  setIsDropdownOpen(false)
-                  // Add your action here
-                  alert('Mục 2 được chọn!')
-                }}
-                className="block w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                ⚡ Mục 2
-              </button>
-              <button
-                onClick={() => {
-                  setIsDropdownOpen(false)
-                  // Add your action here
-                  alert('Mục 3 được chọn!')
-                }}
-                className="block w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                🚀 Mục 3
-              </button>
+          <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-4xl h-5/6 flex flex-col">
+              {/* Header */}
+              <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Menu Chính</h2>
+                <button
+                  onClick={() => setIsDropdownOpen(false)}
+                  className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                >
+                  <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1 p-6 overflow-y-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full">
+                  {/* Option 1 */}
+                  <div 
+                    onClick={() => {
+                      setIsDropdownOpen(false)
+                      alert('Mục 1 được chọn!')
+                    }}
+                    className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-8 text-white cursor-pointer hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <div className="text-6xl mb-4">🎯</div>
+                    <h3 className="text-2xl font-bold mb-2">Mục 1</h3>
+                    <p className="text-blue-100">Mô tả chi tiết về mục 1 và chức năng của nó</p>
+                  </div>
+                  
+                  {/* Option 2 */}
+                  <div 
+                    onClick={() => {
+                      setIsDropdownOpen(false)
+                      alert('Mục 2 được chọn!')
+                    }}
+                    className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-8 text-white cursor-pointer hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <div className="text-6xl mb-4">⚡</div>
+                    <h3 className="text-2xl font-bold mb-2">Mục 2</h3>
+                    <p className="text-green-100">Mô tả chi tiết về mục 2 và chức năng của nó</p>
+                  </div>
+                  
+                  {/* Option 3 */}
+                  <div 
+                    onClick={() => {
+                      setIsDropdownOpen(false)
+                      alert('Mục 3 được chọn!')
+                    }}
+                    className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-8 text-white cursor-pointer hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <div className="text-6xl mb-4">🚀</div>
+                    <h3 className="text-2xl font-bold mb-2">Mục 3</h3>
+                    <p className="text-purple-100">Mô tả chi tiết về mục 3 và chức năng của nó</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}
