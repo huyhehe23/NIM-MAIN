@@ -34,38 +34,13 @@ export function Header() {
         </div>
       </div>
       
-      <div className="flex items-center gap-4 ml-auto">
-        {/* New Multi-Section Button */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
-          <div className="flex">
-            <button
-              onClick={() => alert('Phần 1 được bấm!')}
-              className="px-4 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200 border-r border-blue-400"
-            >
-              Phần 1
-            </button>
-            <button
-              onClick={() => alert('Phần 2 được bấm!')}
-              className="px-4 py-3 bg-green-500 hover:bg-green-600 text-white font-medium transition-colors duration-200 border-r border-green-400"
-            >
-              Phần 2
-            </button>
-            <button
-              onClick={() => alert('Phần 3 được bấm!')}
-              className="px-4 py-3 bg-purple-500 hover:bg-purple-600 text-white font-medium transition-colors duration-200"
-            >
-              Phần 3
-            </button>
-          </div>
-        </div>
-
-        {/* Exclamation Button with Dropdown */}
-        <div className="relative" ref={dropdownRef}>
+      {/* Exclamation Button aligned with avatar */}
+      <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="p-6 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
+          className="w-20 h-20 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 hover:from-pink-500 hover:via-purple-600 hover:to-indigo-700 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
         >
-          <span className="text-white font-bold text-6xl drop-shadow-lg">!</span>
+          <span className="text-white font-bold text-4xl drop-shadow-lg">!</span>
         </button>
         
         {/* Dropdown Menu */}
@@ -105,7 +80,6 @@ export function Header() {
             </div>
           </div>
         )}
-      </div>
       </div>
     </header>
   )
