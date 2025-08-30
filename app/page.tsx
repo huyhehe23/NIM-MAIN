@@ -137,7 +137,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Tôi là một chuyên gia về thiết kế web.
+            Tôi là một chuyên gia về lĩnh vực cầu lông.
           </p>
         </div>
       </motion.section>
